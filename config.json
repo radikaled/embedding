@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "slate_30m_english_rtrvr-0624",
+  "_name_or_path": "granite-embedding-30m-english",
   "architectures": [
     "RobertaModel"
   ],
