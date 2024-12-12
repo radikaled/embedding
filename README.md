@@ -1,7 +1,7 @@
 ---
 language:
 - en
-license: apache-2.0
+license: apache-2.0  
 library_name: transformers
 tags:
 - language
@@ -1778,17 +1778,16 @@ model-index:
       value: 0.00593
     - type: recall_at_5
       value: 0.00962
-pipeline_tag: sentence-similarity
 ---
 # Granite-Embedding-30m-English
 
 **Model Summary:**
-Granite-Embedding-30m-English is a 30M parameter model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 384 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated datasets. This model is developed using retrieval oriented pretraining, contrastive finetuning, knowledge distillation and model merging for improved performance.
+Granite-Embedding-30m-English is a 30M parameter dense biencoder embedding model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 384 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated datasets. While maintaining competitive scores on academic benchmarks such as BEIR, this model also performs well on many enterprise use cases. This model is developed using retrieval oriented pretraining, contrastive finetuning, knowledge distillation and model merging for improved performance.
 
 - **Developers:** Granite Embedding Team, IBM
-- **GitHub Repository:** 
+- **GitHub Repository:** [ibm-granite/granite-embedding-models](https://github.com/ibm-granite/granite-embedding-models)
 - **Website**: [Granite Docs](https://www.ibm.com/granite/docs/)
-- **Paper:** 
+- **Paper:** Coming Soon
 - **Release Date**: December 18th, 2024
 - **License:** [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
@@ -1875,11 +1874,11 @@ query_embeddings = torch.nn.functional.normalize(query_embeddings, dim=1)
 ```
 **Evaluation:**
 
-Granite-Embedding-30M-English is twice as fast as other models with similar embedding dimensions, while maintaining competitive performance. The performance of the Granite-Embedding-30M-English model on MTEB Retrieval (i.e., BEIR) and code retrieval (CoIR) benchmarks is reported below. MTEB Retrieval(14) indicates the average BEIR performance excluding MS-MARCO task as, unlike all other models, Granite-Embedding-30M-English did not train on MS-MARCO due to the dataset's non-commercial license. The average time required to encode and retrieve per query is also reported.
+Granite-Embedding-30M-English is twice as fast as other models with similar embedding dimensions, while maintaining competitive performance. The performance of the Granite-Embedding-30M-English model on MTEB Retrieval (i.e., BEIR) and code retrieval (CoIR) benchmarks is reported below. 
 
-| Model                           | Paramters (M)| Embedding Dimension |  MTEB Retrieval (15) | MTEB Retrieval (14) | CoIR (10) | Retrieval Time (seconds/query)|
-|---------------------------------|-------------:|--------------------:|--------------------:|---------------------:|----------:|------------------------------:|
-|granite-embedding-30m-english    |30            |384                  |49.1                 |50.4                  |47.0        | 0.16                          |
+| Model                           | Paramters (M)| Embedding Dimension |  MTEB Retrieval (15) |  CoIR (10) | 
+|---------------------------------|:------------:|:-------------------:|:-------------------: |:----------:|
+|granite-embedding-30m-english    |30            |384                  |49.1                  |47.0        | 
 
 
 **Model Architecture:**
