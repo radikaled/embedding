@@ -1,7 +1,7 @@
 ---
 language:
 - en
-license: apache-2.0  
+license: apache-2.0
 library_name: transformers
 tags:
 - language
@@ -1778,6 +1778,7 @@ model-index:
       value: 0.00593
     - type: recall_at_5
       value: 0.00962
+pipeline_tag: sentence-similarity
 ---
 # Granite-Embedding-30m-English
 
