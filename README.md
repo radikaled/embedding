@@ -1937,6 +1937,10 @@ We train Granite Embedding Models using IBM's computing cluster, Cognitive Compu
 **Ethical Considerations and Limitations:** 
 The data used to train the base language model was filtered to remove text containing hate, abuse, and profanity. Granite-Embedding-30m-English is trained only for English texts, and has a context length of 512 tokens (longer texts will be truncated to this size).
 
+**Resources**
+- ⭐️ Learn about the latest updates with Granite: https://www.ibm.com/granite
+- 📄 Get started with tutorials, best practices, and prompt engineering advice: https://www.ibm.com/granite/docs/
+- 💡 Learn about the latest Granite learning resources: https://ibm.biz/granite-learning-resources
 
 <!-- ## Citation
 ```
