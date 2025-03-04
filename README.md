@@ -2,12 +2,13 @@
 language:
 - en
 license: apache-2.0
-library_name: transformers
+library_name: sentence-transformers
 tags:
 - language
 - granite
 - embeddings
 - mteb
+- transformers
 model-index:
 - name: ibm-granite/granite-embedding-30m-english
   results:
